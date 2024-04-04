@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #main-div{
+            height : 100vh;
+            width : 20vw;
+            text-align:centre;
+        }
+        .nav-bar div{
+            font-size:20;
+            height: 50px;
+            text-align : center;
+            vertical-align : middle;
+        }
+        span{
+            display:block;
+        
+        }
+        .section{
+            display:none;
+        }
+        .main-section:hover .section{
+            display:block;
+        }
+        #main-div .main-section{
+            font-size:20px;
+        }
+        </style>
+</head>
+
+
+
+<body>
+   <div id="main-div">
+
+   <div id ="man-div" class =" main-section">
+   <div id="man">Man</div>
+   <div class="section" id ="man-section">
+   
+    <span>Shirts </span>
+    <span>T shirt</span>
+   <span>jeans</span>
+</div>
+</div>
+<hr>
+   <div id = "women-div" class="main-section">
+   
+    <div id ="women">Women</div>
+    <div class="section" id="women-section">
+    <span >skirts</span>
+    <span>tops</span>
+    <span>jewellary</span>
+   </div>
+   </div>
+   <hr>
+
+   <div id="kids-div" class="main-section">
+    <div id = "kids">kids</div>
+   <div class="section" id="kids-section">
+   <span>toys</span>
+   <span>eyewear</span>
+   <span>shoes</span>
+   </div>
+   </div>
+   </div>
+</body>
+</html>

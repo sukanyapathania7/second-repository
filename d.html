@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+    #result{
+        font-size:18px;
+        color:blue;
+    }
+
+
+     </style>
+<script>
+function fun1(){
+    var address = document.getElementById("p1");
+    var text = address.innerHTML;
+    alert(text);
+}
++   
+function fun2(){
+    document.getElementById("p1").innerHTML="Welcome to javascript";
+}
+function fun3(){
+    var address1 = document.getElementById("p2");
+    var text= address1.innerHTML;
+    alert(text); 
+}
+function hide(){
+    document.getElementById("div1").style.visibility="hidden";
+}
+
+function show(){
+    var address= document.getElementById("div1");
+    address.style.visibility="visible";
+    address.style.background="red";
+    address.style.border="dotted";
+   address.style. width="200px";
+    address.style.height="200px";
+    
+}
+function sum(){
+var num1 = parseInt(document.getElementById("num1").value);
+
+var num2 = parseInt(doocument.getElementById("num2").value);
+
+var sum = num1 + num2;
+
+document.getElementById("result").innerHTML="sum:"+Sum;
+
+}
+</script>
+</head>
+<body>
+    <p id ="p1">Welcome to js</p>
+    
+        <p class="p2">welcome to my world</p>
+        <p class="p2">welcome to my world</p>
+        <p class ="p2">welcome to my world</p>
+        <p class ="p2">welcome to my world</p>
+        <p class ="p2">welcome to my world</p>
+        <p class ="p2">welcome to my world</p>
+       <div id="div1"></div>
+       <div>
+        <div id="numbers">
+        <input type="text " id ="num1">
+        <input type ="text" id="num2">
+        
+        <h2 id="result"></h2>/>
+        <button onclick="sum()">SUM</button>
+       </div>
+  <button onclick="fun1()">FUN1</button>  
+  <button onclick="fun2()">FUN 2</button>
+  <button onclick="fun3()">FUN 3</button>
+  <button onclick ="hide ()">Hide</button>
+  <button onclick ="show()">Show</button>
+  
+</body>
+</html>

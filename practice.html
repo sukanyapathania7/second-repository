@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+  <script>
+  function btn1(){
+    var address = document.getElementById("hideshow");
+    address.style.visibility= "visible";
+    address.style.height="150px";
+    address.style.width="90px";
+    address.style.border="solid";
+    address.style.background="red";
+
+  }
+  function btn2(){
+    document.getElementById("hideshow").style.visibility="hidden";
+  }
+  </script>
+</head>
+<body>
+    
+<div id="hideshow"></div>
+<button onclick="btn1()">Show</button>
+<button onclick="btn2()">Hide</button>
+</body>
+</html>
